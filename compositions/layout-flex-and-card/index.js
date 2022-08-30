@@ -7,9 +7,21 @@ import config from "./config/styleConfig";
 
 const cards = [1,2,3,4];
 
-function LayoutFlexAndCard({flex_direction}) {
+function LayoutFlexAndCard({
+    flex_direction,
+    justify_content,
+    align_items,
+    flex_wrap
+}) {
     return(
-        <LayoutFlex styleConfig={{...config.layoutFlexStyleConfig, flex_direction}}>
+        <LayoutFlex styleConfig={
+            {...config.layoutFlexStyleConfig,
+                flex_direction,
+                justify_content,
+                align_items,
+                flex_wrap
+            }
+        }>
             {
                 cards.map((number) => <Card styleConfig={config.cardStyleConfig} key={number}/>)
             }
