@@ -9,6 +9,7 @@ export default {
 const styleConfig = {
     height: "512px",
     width: "512px",
+    display: "flex",
     flex_direction: "row",
     justify_content: "space-between",
     align_items: "center",

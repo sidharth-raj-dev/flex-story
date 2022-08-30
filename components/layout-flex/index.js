@@ -6,6 +6,7 @@ function LayoutFlex({styleConfig, children}) {
             style={{
                 height: styleConfig.height,
                 width: styleConfig.width,
+                display: styleConfig.display,
                 flexDirection: styleConfig.flex_direction,
                 justifyContent: styleConfig.justify_content,
                 alignItems: styleConfig.align_items,
