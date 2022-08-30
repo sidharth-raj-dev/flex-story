@@ -1,17 +1,17 @@
 const styleConfig = {
     layoutFlexStyleConfig: {
-        height: "512px",
-        width: "512px",
+        height: "720px",
+        width: "720px",
         display: "flex",
-        flex_direction: "row",
+        flex_direction: "column",
         justify_content: "space-between",
         align_items: "center",
         flex_wrap: "nowrap",
         background: "white",
         border: "1px",
         border_color: "lightblue",
-        margin_top: "100px",
-        margin_left: "100px",
+        margin_top: "50px",
+        margin_left: "50px",
         margin_bottom: "0px",
         margin_right: "0px"
     },

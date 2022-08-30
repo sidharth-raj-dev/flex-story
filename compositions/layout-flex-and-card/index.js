@@ -5,9 +5,8 @@ import config from "./config/styleConfig";
 
 // this composition is made of four card component and one layout component 
 
-const cards = [1,2,3,4];
-
 function LayoutFlexAndCard({
+    cards_quantity,
     flex_direction,
     justify_content,
     align_items,
@@ -23,7 +22,8 @@ function LayoutFlexAndCard({
             }
         }>
             {
-                cards.map((number) => <Card styleConfig={config.cardStyleConfig} key={number}/>)
+                [...Array(Number(cards_quantity)).keys()]
+                    .map((number) => <Card styleConfig={config.cardStyleConfig} key={number}/>)
             }
         </LayoutFlex>
     );

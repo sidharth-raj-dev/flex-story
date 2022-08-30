@@ -5,6 +5,9 @@ export default {
     title: "compositions/LayoutFlexAndCard",
     component: LayoutFlexAndCard,
     argTypes: {
+        cards_quantity: {
+            control: { type: "range", min: 1, max: 42, step: 1 }
+        },
         flex_direction: {
             options: ["row", "column"],
             control: { type: "radio" },
@@ -18,7 +21,7 @@ export default {
             control: { type: "radio" },
         },
         flex_wrap: {
-            options: ["nowrap", "wrap", "wrap-reverse"],
+            options: ["nowrap", "wrap"],
             control: { type: "radio" },
         },
     }
@@ -26,6 +29,7 @@ export default {
 
 const Template = (args) => (
     <LayoutFlexAndCard
+        cards_quantity={args.cards_quantity}
         flex_direction={args.flex_direction}
         justify_content={args.justify_content}
         align_items={args.align_items}
@@ -38,6 +42,7 @@ export const Dynamic = Template.bind({});
 // making controls
 
 Dynamic.args = {
+    cards_quantity: 4,
     flex_direction: "row",
     justify_content: "space-around",
     align_items: "center",
@@ -46,6 +51,7 @@ Dynamic.args = {
 
 export const Default = () => (
     <LayoutFlexAndCard
+        cards_quantity="4"
         flex_direction="row"
         justify_content= "space-around"
         align_items="center"
