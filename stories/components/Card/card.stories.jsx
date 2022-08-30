@@ -23,4 +23,6 @@ const Template = (args) => <Card {...args} />;
 
 export const Dynamic = Template.bind({});
 
-Dynamic.args = { styleConfig: config };
+Dynamic.args = { 
+    styleConfig: config 
+};
