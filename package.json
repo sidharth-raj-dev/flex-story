@@ -1,0 +1,34 @@
+{
+  "name": "flex-story",
+  "version": "0.0.1",
+  "description": "Understand flex box better with interactive components.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
+    "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "Sidharth Raj",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.0.2",
+    "react-dom": "^18.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack5": "^6.5.10",
+    "@storybook/manager-webpack5": "^6.5.10",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "0.0.13",
+    "babel-loader": "^8.2.5",
+    "eslint": "^8.23.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.1"
+  }
+}
